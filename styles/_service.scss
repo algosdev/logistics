@@ -1,0 +1,81 @@
+.services {
+  z-index: 1;
+  .grid {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    .service-item {
+      padding: 0 15px;
+      .title {
+        font-size: 20px;
+        line-height: 22px;
+        text-transform: none;
+        letter-spacing: 0px;
+        color: $dark-txt;
+        margin: 10px 0;
+      }
+    }
+    .img {
+      img {
+        max-height: 300px;
+      }
+    }
+  }
+  .service-list {
+    background-image: url("../public/earth-bg.png");
+    background-color: $dark-blue;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: normal;
+    position: relative;
+    z-index: -1;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($dark-blue, 0.9);
+      opacity: 0.5;
+      z-index: 1;
+    }
+    .container {
+      .grid {
+        padding: 50px;
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        .service-list-item {
+          max-width: 220px;
+          position: relative;
+          z-index: 5;
+          .title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-transform: none;
+            font-weight: 700;
+            letter-spacing: 0px;
+          }
+          .txt {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: none;
+          }
+          .icon {
+            z-index: 4;
+            position: absolute;
+            left: -30px;
+            top: 10px;
+            transform: scale(2);
+          }
+        }
+      }
+    }
+  }
+}

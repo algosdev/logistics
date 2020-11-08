@@ -1,0 +1,26 @@
+@mixin shm {
+  @media (max-width: #{$screen-shm}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (max-width: #{$screen-xxl}) {
+    @content;
+  }
+}

@@ -1,0 +1,71 @@
+.header_container > .main {
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  margin-top: 0;
+}
+
+.header_container > .top_nav {
+  border-bottom-width: 0px;
+}
+
+.header_container > .extra_row {
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: -40px;
+  padding-right: 30px;
+}
+
+footer#colophon {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header_container.menu_style-border_bottom.menu-full-style
+  #navigation
+  nav
+  > ul
+  > li,
+.header_container.menu_style-border_bottom.menu-text-style
+  #navigation
+  nav
+  > ul
+  > li
+  > a {
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #3bb6ce !important;
+  color: #fff !important;
+}
+
+.portfolio_navigation .portfolio_single_right:hover,
+.portfolio_navigation .portfolio_single_left:hover {
+  background: #3bb6ce;
+}
+
+.woocommerce-page .shop-products {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.btn-style-text_effect:after {
+  background-color: #ffffff;
+}
+
+.btn-style-text_effect:hover:after {
+  background-color: #ffffff;
+}
+
+.cl_service.cl-hover-wrapper_accent_color:hover .wrapper-form {
+  background-color: #3bb6ce !important;
+  border-color: #3bb6ce !important;
+}
+
+.cl-mobile-menu {
+  margin-top: 40px;
+}
