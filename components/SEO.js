@@ -1,256 +1,31 @@
-import React from "react";
-import Head from "next/head";
-function SEO() {
+import React from 'react'
+import Head from 'next/head'
+function SEO({ title, keywords, description, image }) {
   return (
     <Head>
-      <meta charset="UTF-8" />
-      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta charSet='utf-8' />
 
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>{title ? `${title} | MyFrighter` : `MyFrighter`}</title>
+      <meta name='description' content={description} />
+      <meta name='keywords' content={keywords} />
 
-      <link
-        rel="pingback"
-        href="https://codeless.co/handel/transport/xmlrpc.php"
-      />
-      <title>Transport / Cargo / Logistic | Handel WordPress Theme</title>
-      <link
-        rel="alternate"
-        hreflang="en"
-        href="https://codeless.co/handel/transport"
-      />
-      <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-      <link rel="dns-prefetch" href="//s.w.org" />
-      <link
-        rel="alternate"
-        type="application/rss+xml"
-        title="Transport / Cargo / Logistic | Handel WordPress Theme &raquo; Feed"
-        href="https://codeless.co/handel/transport/?feed=rss2"
-      />
-      <link
-        rel="alternate"
-        type="application/rss+xml"
-        title="Transport / Cargo / Logistic | Handel WordPress Theme &raquo; Comments Feed"
-        href="https://codeless.co/handel/transport/?feed=comments-rss2"
-      />
-      <link
-        rel="stylesheet"
-        id="codeless-online-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/codeless-online.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="contact-form-7-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8.1"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="font-awesome-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/font-awesome/css/font-awesome.min.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="wpdm-bootstrap-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="wpdm-front-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/css/front.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="rs-plugin-settings-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.5.1"
-        type="text/css"
-        media="all"
-      />
-
-      <link
-        rel="stylesheet"
-        id="wpml-legacy-dropdown-click-0-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.css?ver=1"
-        type="text/css"
-        media="all"
-      />
-
-      <link
-        rel="stylesheet"
-        id="wpml-legacy-horizontal-list-0-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css?ver=1"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="bootstrap-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/bootstrap.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="codeless-style-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/style.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="codeless-front-elements-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/codeless-front-elements.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="swiper-slider-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/swiper.min.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="codeless-creative-search-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/codeless-creative-search.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="codeless-dynamic-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/css/codeless-dynamic.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="tablepress-default-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/tablepress/css/default.min.css?ver=1.8"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="cl-front-site-css"
-        href="https://codeless.co/handel/transport/wp-content/plugins/codeless-builder/assets/css/cl-front-site.css?ver=4.8.15"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="kirki_google_fonts-css"
-        href="https://fonts.googleapis.com/css?family=Poppins%3A300%2Cregular%2C500%2C600%2C700%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3Aregular%2C700&#038;subset=latin-ext"
-        type="text/css"
-        media="all"
-      />
-      <link
-        rel="stylesheet"
-        id="kirki-styles-cl_handel-css"
-        href="https://codeless.co/handel/transport/wp-content/themes/handel/includes/codeless_customizer/kirki/assets/css/kirki-styles.css"
-        type="text/css"
-        media="all"
-      />
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-includes/js/jquery/jquery.js?ver=1.12.4"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/themes/handel/js/codeless-online.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/js/front.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/download-manager/assets/js/chosen.jquery.min.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.5.1"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.5.1"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js?ver=1"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-includes/js/imagesloaded.min.js?ver=3.2.0"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/themes/handel/js/codeless-main.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/themes/handel/js/bowser.min.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/codeless-builder/assets/js/cl-front-end.js?ver=4.8.15"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://codeless.co/handel/transport/wp-content/plugins/cf7-cost-calculator-price-calculation/frontend/js/cf7_calculator.js?ver=4.8.15"
-      ></script>
-      <meta name="generator" content="WordPress Download Manager 2.9.54" />
-      <link
-        rel="https://api.w.org/"
-        href="https://codeless.co/handel/transport/index.php?rest_route=/"
-      />
-      <link
-        rel="EditURI"
-        type="application/rsd+xml"
-        title="RSD"
-        href="https://codeless.co/handel/transport/xmlrpc.php?rsd"
-      />
-      <link
-        rel="wlwmanifest"
-        type="application/wlwmanifest+xml"
-        href="https://codeless.co/handel/transport/wp-includes/wlwmanifest.xml"
-      />
-      <link rel="canonical" href="https://codeless.co/handel/transport" />
-      <link rel="shortlink" href="https://codeless.co/handel/transport/" />
-      <link
-        rel="alternate"
-        type="application/json+oembed"
-        href="https://codeless.co/handel/transport/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fcodeless.co%2Fhandel%2Ftransport"
-      />
-      <link
-        rel="alternate"
-        type="text/xml+oembed"
-        href="https://codeless.co/handel/transport/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fcodeless.co%2Fhandel%2Ftransport&#038;format=xml"
-      />
-      <meta name="generator" content="WPML ver:3.7.1 stt:1,4,3;" />
+      <meta property='og:type' content='website' />
       <meta
-        name="generator"
-        content="Powered by Slider Revolution 5.4.5.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."
+        property='og:title'
+        content={title ? `${title} | Voxe` : `Voxe`}
+        key='ogtitle'
+      />
+      <meta property='og:description' content={description} key='ogdesc' />
+      <meta property='og:site_name' content='Voxe' key='ogsitename' />
+      {/* <meta property="og:url" content={location.href} key="ogurl" /> */}
+      <meta
+        property='og:image'
+        content={image || 'images/carousel_1.jpg'}
+        key='ogimage'
       />
     </Head>
-  );
+  )
 }
 
-export default SEO;
+export default SEO

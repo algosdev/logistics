@@ -1,0 +1,25 @@
+.download-cont {
+  .content {
+    color: $dark-txt;
+    display: flex;
+    margin: 20px auto;
+    .icon {
+      width: 32px;
+      margin-right: 5px;
+    }
+    .leading {
+      &.bold {
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+    .size {
+      background: $blue;
+      font-size: 11px;
+      padding: 3px;
+      border-radius: 2px;
+      color: #fff;
+      margin: 0 5px;
+    }
+  }
+}

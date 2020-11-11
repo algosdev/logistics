@@ -24,14 +24,15 @@
     font-style: italic;
   }
 }
+label {
+  color: $grey-txt;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  text-transform: none;
+}
 .input {
-  label {
-    color: $grey-txt;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: none;
-  }
   input,
   select {
     border-width: 1px;
@@ -41,6 +42,7 @@
     width: 100%;
     outline: 0;
     height: 40px;
+    font-size: 14px;
     padding: 0 10px;
     color: $grey-txt;
   }
@@ -63,15 +65,15 @@
     transition: 0.4s linear;
   }
 
-  .block input[type="checkbox"]:checked ~ .info {
+  .block input[type='checkbox']:checked ~ .info {
     max-height: 200px;
     transition: 0.4s linear;
   }
-  .block input[type="checkbox"]:checked ~ .border {
+  .block input[type='checkbox']:checked ~ .border {
     margin-top: 1em;
     transition: 0.4s;
   }
-  .block input[type="checkbox"]:not(:checked) ~ .border {
+  .block input[type='checkbox']:not(:checked) ~ .border {
     margin-top: 0;
     transition: 0.4s;
   }
@@ -79,25 +81,25 @@
     transition: 0.4s linear;
     transform: rotate(0);
   }
-  .block input[type="checkbox"]:checked ~ label .minus {
+  .block input[type='checkbox']:checked ~ label .minus {
     display: flex;
   }
-  .block input[type="checkbox"]:not(:checked) ~ label .plus {
+  .block input[type='checkbox']:not(:checked) ~ label .plus {
     display: flex;
   }
-  .block input[type="checkbox"]:checked ~ label .plus {
+  .block input[type='checkbox']:checked ~ label .plus {
     display: none;
   }
-  .block input[type="checkbox"]:not(:checked) ~ label .minus {
+  .block input[type='checkbox']:not(:checked) ~ label .minus {
     display: none;
   }
 
-  .block input[type="checkbox"]:not(:checked) ~ .info {
+  .block input[type='checkbox']:not(:checked) ~ .info {
     max-height: 0;
     transition: 0.4s linear;
   }
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     width: 100%;
     display: none;
   }
@@ -178,4 +180,52 @@
 }
 .bold {
   font-weight: bold;
+}
+.mini-title {
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: none;
+  letter-spacing: 0px;
+  color: $dark-txt;
+  margin: 10px 0;
+}
+.border {
+  width: 100%;
+  height: 0.5px;
+  background: rgba($grey-txt, 0.3);
+  margin: 3em 0;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  input {
+    position: absolute;
+    left: -999999px;
+  }
+  label {
+    margin: 0 40px;
+    cursor: pointer;
+    overflow: visible;
+  }
+  label::before {
+    content: '';
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 30px;
+    background: #fff;
+    height: 30px;
+    border-radius: 50%;
+    // border: 8px solid $grey-txt;
+  }
+  input:checked + label::before {
+    background: #fff;
+    border: 8px solid $grey-txt;
+  }
 }

@@ -6,14 +6,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     .service-item {
       padding: 0 15px;
-      .title {
-        font-size: 20px;
-        line-height: 22px;
-        text-transform: none;
-        letter-spacing: 0px;
-        color: $dark-txt;
-        margin: 10px 0;
-      }
     }
     .img {
       img {
@@ -22,7 +14,7 @@
     }
   }
   .service-list {
-    background-image: url("../public/earth-bg.png");
+    background-image: url('../public/earth-bg.png');
     background-color: $dark-blue;
     background-position: left top;
     background-size: cover;
@@ -32,7 +24,7 @@
     position: relative;
     z-index: -1;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -68,6 +60,7 @@
             text-transform: none;
           }
           .icon {
+            opacity: 0.2;
             z-index: 4;
             position: absolute;
             left: -30px;

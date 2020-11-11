@@ -1,0 +1,16 @@
+.news-cont {
+  color: $dark-txt;
+  .news {
+    margin: 10px 0;
+    .title {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .date {
+      font-size: 12px;
+      font-weight: 300;
+      color: $grey-txt;
+    }
+  }
+}

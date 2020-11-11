@@ -1,0 +1,49 @@
+.about-page {
+  .about-banner {
+    height: 400px;
+    background: url('../public/banner1.jpg');
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 4;
+    }
+    .heading {
+      z-index: 5;
+    }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 30px;
+    padding-top: 50px;
+    .transport-types {
+      display: flex;
+      flex-wrap: wrap;
+      .type {
+        display: flex;
+        margin: 0 10px;
+        width: 270px;
+        align-items: flex-start;
+        .icon {
+          margin-right: 20px;
+          margin-top: 15px;
+          svg {
+            transform: scale(1.2);
+            fill: $blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,22 +1,23 @@
-import Head from "next/head";
-import SEO from "../components/SEO";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import Services from "../components/Services";
-import AboutUs from "../components/AboutUs";
+import Head from 'next/head'
+import SEO from '../components/SEO'
+import Header from '../components/Header'
+import Main from '../components/Main'
+import Banner from '../components/HomeBanner'
+import Footer from '../components/Footer'
+import Services from '../components/Services'
+import AboutUs from '../components/AboutUs'
+import News from '../components/News'
 export default function Home() {
   return (
     <>
-      {/* <SEO /> */}
+      <SEO title='My Frighter' />
       <Header />
       <Banner />
       <Services />
       <AboutUs />
       {/* <Main />*/}
       <Footer />
-      <div className="main-container"></div>
+      <div className='main-container'></div>
       {/* <link
         rel="stylesheet"
         id="owl-carousel-css"
@@ -77,5 +78,5 @@ export default function Home() {
         src="//maps.googleapis.com/maps/api/js?key=AIzaSyDNS4R2BxpPspB31mZPnGvelSPSXvggI4I&#038;ver=4.8.15#038;callback=initGMAP"
       ></script> */}
     </>
-  );
+  )
 }
