@@ -1,0 +1,22 @@
+.socials-cont {
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      display: flex;
+      .icon-cont {
+        margin-right: 10px;
+        margin-top: 10px;
+        .icon {
+          width: 64px !important;
+          height: 64px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $blue;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@
     },
     "markdown"
   ],
-  "emmet.includeLanguages": { "javascript": "html" },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "emmet.preferences": {}
 }

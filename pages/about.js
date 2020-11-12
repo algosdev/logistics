@@ -11,7 +11,7 @@ function About() {
     <div className='about-page'>
       <Header />
       <AboutBanner />
-      <div className='container'>
+      <div className=' grid container'>
         <div className='left'>
           <div className='transport-types'>
             <div className='type'>
@@ -75,7 +75,7 @@ function About() {
               desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
-            <div class='border'></div>
+            <div className='border'></div>
           </div>
         </div>
         <div className='right'>

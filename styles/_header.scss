@@ -6,11 +6,28 @@
   & * {
     z-index: 9;
   }
+  &.dark {
+    .header-txt {
+      color: $dark-txt !important;
+    }
+    .dropdown-lang {
+      position: relative;
+      color: $dark-txt;
+      font-size: 14px;
+
+      &:hover {
+        .active-lang {
+          background: #fff;
+          color: $dark-txt;
+        }
+      }
+    }
+  }
   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
+    display: block;
     padding: 0 15px;
     padding-top: 0 !important;
   }

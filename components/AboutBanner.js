@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ContactBanner from './ContactBanner'
 function AboutBanner() {
   return (
     <div className='about-banner'>
