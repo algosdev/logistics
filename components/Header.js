@@ -131,9 +131,11 @@ function Header({ dark, active }) {
           <div className='container'>
             <div className='header-el'>
               <div className='logo'>
-                <a href='#'>
-                  <img src='/logo.png' alt='Logo' />
-                </a>
+                <Link href='/'>
+                  <a>
+                    <img src='/logo.png' alt='Logo' />
+                  </a>
+                </Link>
               </div>
             </div>
             <div className='navigator'>
