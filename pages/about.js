@@ -9,7 +9,7 @@ import News from '../components/News'
 function About() {
   return (
     <div className='about-page'>
-      <Header />
+      <Header active='about' />
       <AboutBanner />
       <div className=' grid container'>
         <div className='left'>

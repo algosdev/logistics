@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <SEO title='My Frighter' />
-      <Header />
+      <Header active='home' />
       <Banner />
       <Services />
       <AboutUs />

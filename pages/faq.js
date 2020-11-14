@@ -9,7 +9,7 @@ import News from '../components/News'
 function Faq() {
   return (
     <div className='faq-page'>
-      <Header />
+      <Header active='faq' />
       <FaqBanner />
       <div className='container grid'>
         <div className='left'>

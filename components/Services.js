@@ -56,83 +56,101 @@ function Services() {
         </div>
       </div>
       <div className='service-list'>
+        <div className='img'></div>
+        <div className='overlay'></div>
         <div className='container '>
           <div className='grid'>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <SettingIcon />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Exchange />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Network />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Package />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Truck />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Highway />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Plane />
               </div>
             </div>
             <div className='service-list-item'>
-              <div className='title'>Door-to-door Delivery</div>
-              <div className='txt'>
-                On the other hand, we denounce with righteous indignation and
-                dislike men who are so beguiled
+              <div className='content'>
+                <div className='title'>Door-to-door Delivery</div>
+                <div className='txt'>
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled
+                </div>
               </div>
               <div className='icon'>
                 <Earth />

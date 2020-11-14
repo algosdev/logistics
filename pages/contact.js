@@ -7,7 +7,7 @@ import ContactForm from '../components/ContactForm'
 function contact() {
   return (
     <div className='contact-page'>
-      <Header />
+      <Header active='contact' />
       <ContactBanner />
       <div className='container'>
         <Socials />

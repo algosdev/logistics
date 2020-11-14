@@ -9,7 +9,7 @@ import News from '../components/News'
 function Calculator() {
   return (
     <div className='calculator-page'>
-      <Header />
+      <Header active='calculator' />
       <CalculatorBanner />
       <div className='container grid'>
         <div className='left'>

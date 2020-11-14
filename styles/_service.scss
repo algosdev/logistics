@@ -1,5 +1,4 @@
 .services {
-  z-index: 1;
   .grid {
     display: grid;
     margin: 30px 0;
@@ -14,28 +13,37 @@
     }
   }
   .service-list {
-    background-image: url('../public/earth-bg.png');
-    background-color: $dark-blue;
+    background-image: url('../public/earthbg.png');
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-blend-mode: normal;
     position: relative;
-    z-index: -1;
-    &::after {
-      content: '';
+    & > .img {
+      background-position: left top;
+      background-size: cover;
+      background-repeat: no-repeat;
+
       position: absolute;
-      top: 0;
       left: 0;
-      bottom: 0;
-      right: 0;
-      height: 100%;
+
+      top: 0;
       width: 100%;
-      background-color: rgba($dark-blue, 0.9);
-      opacity: 0.5;
-      z-index: 1;
+      height: 100%;
     }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-color: rgba(#0f1138, 0.9);
+    //   opacity: 0.5;
+    // }
     .container {
       .grid {
         padding: 50px;
@@ -45,7 +53,10 @@
         .service-list-item {
           max-width: 220px;
           position: relative;
-          z-index: 5;
+          .content {
+            position: relative;
+            z-index: 4;
+          }
           .title {
             font-size: 20px;
             margin-bottom: 10px;
@@ -54,18 +65,21 @@
             letter-spacing: 0px;
           }
           .txt {
+            z-index: 2;
             font-weight: 600;
             font-size: 14px;
             line-height: 24px;
             text-transform: none;
           }
           .icon {
-            opacity: 0.2;
-            z-index: 4;
             position: absolute;
             left: -30px;
             top: 10px;
-            transform: scale(2);
+            transform: scale(2.2);
+            z-index: 1;
+            svg {
+              opacity: 0.15;
+            }
           }
         }
       }

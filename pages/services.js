@@ -9,7 +9,7 @@ import News from '../components/News'
 function Service() {
   return (
     <div className='services-page'>
-      <Header />
+      <Header active='services' />
       <ServiceBanner />
       <div className='container grid'>
         <div className='left'>

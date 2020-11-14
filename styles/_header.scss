@@ -1,11 +1,33 @@
 .header_container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  & * {
-    z-index: 9;
+  z-index: 9999;
+  display: none;
+  animation: goUp 0.5s ease-in-out forwards;
+  &.sticky {
+    display: initial;
+    animation: goDown 0.5s ease-in-out forwards;
   }
+  &.bg {
+    .top-nav {
+      display: none;
+    }
+    // backdrop-filter: blur(12px);
+    // background: rgba(0, 0, 0, 0.5);
+    // background: #fff;
+  }
+  &.usual {
+    .top-nav {
+      display: none;
+    }
+  }
+  .header-inner {
+    position: sticky;
+    margin: 0 auto;
+  }
+
   &.dark {
     .header-txt {
       color: $dark-txt !important;
@@ -129,6 +151,10 @@
           align-items: center;
           justify-content: center;
           height: 100%;
+          &:nth-last-of-type(1) {
+            margin-right: 0;
+            margin-left: auto;
+          }
           .icon {
             margin-right: 10px;
           }
@@ -162,9 +188,26 @@
     }
   }
   .header-row {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
+    & > .container {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &.bg {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+      background: #fff;
+      & * {
+        color: $dark-txt;
+      }
+      .btn {
+        color: #fff;
+      }
+      .active {
+        border-bottom: 2px solid $dark-txt !important;
+      }
+    }
+
     .header-el {
       height: 100%;
       font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -223,9 +266,9 @@
             align-items: center;
             padding-right: 14px;
             position: relative;
-            color: rgb(240, 235, 235);
+            color: #fff;
+
             &:hover {
-              color: #fff;
               .nav-dropdown {
                 display: initial;
               }
@@ -259,6 +302,7 @@
               line-height: 32px;
               letter-spacing: 0px;
               text-align: left;
+              font-family: 'Roboto', sans-serif;
               text-transform: uppercase;
               .active {
                 border-bottom: 2px solid #fff;
@@ -276,16 +320,36 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          .btn {
+            font-family: 'Roboto', sans-serif;
+          }
         }
       }
     }
   }
-  &.sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    z-index: 10;
+}
+@keyframes goUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  99% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes goDown {
+  0% {
+    display: flex;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

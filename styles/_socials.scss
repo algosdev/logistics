@@ -15,6 +15,20 @@
           align-items: center;
           justify-content: center;
           border: 1px solid $blue;
+          background: transparent;
+          transition: 0.3s;
+          svg {
+            transition: 0.3s;
+            fill: $blue;
+          }
+        }
+      }
+      &:hover {
+        .icon {
+          background: $blue;
+          svg {
+            fill: #fff;
+          }
         }
       }
     }

@@ -6,7 +6,17 @@
   height: 700px;
   width: 100%;
   z-index: 1;
+  .carousel-item {
+    img {
+      height: 700px;
+      filter: brightness(0.5);
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
   .banner-content {
+    margin: 0 auto;
+    max-width: 1200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,13 +27,18 @@
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 200px;
+    & * {
+      font-family: 'Roboto', sans-serif;
+    }
+
     &.left {
       align-items: flex-start;
     }
     p {
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 20px;
       text-transform: none;
       margin-bottom: 1em;
@@ -37,12 +52,22 @@
     .swiper-button-next {
       color: #fff;
       transform: scale(0.8);
+      font-weight: bold;
+      &:focus {
+        outline: none;
+      }
+    }
+    .swiper-button-prev {
+      left: 100px;
+    }
+    .swiper-button-next {
+      right: 100px;
     }
     .swiper-slide {
       img {
         width: 100%;
         height: auto;
-        filter: brightness(0.7);
+        filter: brightness(0.5);
       }
     }
   }
