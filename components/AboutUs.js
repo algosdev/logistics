@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <div className='about-component'>
       <div className='container'>
-        <div className='grid'>
+        {/* <div className='grid'>
           <div className='left'>
             <div className='title-cont'>
               <span className='title'>About Us</span>
@@ -30,81 +30,15 @@ function AboutUs() {
               more-or-less normal distribution of letters, as opposed to using
               ‘Content here, content here’.
             </div>
-            <div className='about-boxes'>
-              <div className='about-box'>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-              </div>
-              <div className='about-box blue'>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-                <p>
-                  <span className='arrow'>
-                    <BoldArrow />
-                  </span>
-                  <span>Cargo Transport</span>
-                </p>
-              </div>
-            </div>
           </div>
           <div className='right'>
             <div className='slider'>
               <AboutSlider />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className='extra'>
+      <div className='extra '>
         <div className='extra-grid container'>
           <div className='testimonials'>
             <div className='title-cont'>

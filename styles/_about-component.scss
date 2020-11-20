@@ -61,8 +61,37 @@
     }
     .right {
       width: 500px;
+      margin-left: auto;
       position: relative;
-
+      @include xll {
+        max-width: 400px;
+      }
+      .main-slider-custom {
+        .swiper-slide {
+          width: 100% !important;
+          max-width: 500px;
+          @include xll {
+            max-width: 400px;
+          }
+        }
+      }
+      .thumb-slider-custom {
+        .swiper-wrapper,
+        .swiper-container {
+          width: 100% !important;
+          max-width: 500px;
+          @include xll {
+            max-width: 400px;
+          }
+        }
+        .swiper-slide {
+          width: 100% !important;
+          max-width: calc(490px / 3);
+          @include xll {
+            max-width: calc(390px / 3);
+          }
+        }
+      }
       .swiper-container {
         width: 100%;
         margin: 2em;
@@ -129,14 +158,25 @@
     }
     .extra-grid {
       display: grid;
+      overflow-x: hidden;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px;
+      position: relative;
+      @include lgs {
+        grid-template-columns: 1fr;
+      }
       .request-quote {
         form {
           .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
             grid-gap: 10px;
+            @include lgs {
+              grid-template-columns: 1fr 1fr;
+            }
+            @include shm {
+              grid-template-columns: 1fr;
+            }
           }
           .btn {
             display: inline-block;
@@ -144,9 +184,32 @@
         }
       }
       .testimonials {
-        width: 370px;
-        height: 330px;
+        max-width: 370px;
+        width: 100%;
+        min-height: 200px;
+        @include xll {
+          max-width: 300px;
+        }
+        @include lg {
+          max-width: 240px;
+        }
+        @include lgs {
+          width: 100%;
+          max-width: calc(100vw - 20px);
+        }
         .testimonial {
+          width: 370px;
+
+          @include xll {
+            width: 300px;
+          }
+          @include lg {
+            width: 240px;
+          }
+          @include lgs {
+            width: 100%;
+            max-width: calc(100vw - 20px);
+          }
           .content {
             font-size: 14px;
             line-height: 28px;

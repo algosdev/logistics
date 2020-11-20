@@ -5,6 +5,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px 0;
     grid-gap: 30px;
+    @include lgs {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
     .column {
       .socials {
         display: flex;
@@ -53,6 +59,10 @@
       .link-cont {
         display: flex;
         flex-direction: column;
+        @include sm {
+          // flex-direction: row;
+          // flex-wrap: wrap;
+        }
       }
       .footer-link {
         font-weight: 400;
@@ -83,12 +93,18 @@
     }
   }
   .bottom-menu {
+    @include sm {
+      display: none;
+    }
     background: lighten($dark-blue, 5%);
     .container {
+      @include lgs {
+        font-size: 14px;
+      }
       display: flex;
       align-items: center;
       height: 72px;
-      padding: 0;
+      padding: 0 10px;
       justify-content: space-between;
       .footer-menu {
         display: flex;

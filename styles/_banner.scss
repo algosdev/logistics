@@ -3,12 +3,18 @@
   // top: 0;
   // left: 0;
   // right: 0;
-  height: 700px;
+  height: 105vh;
+  @include sm {
+    height: 95vh;
+  }
   width: 100%;
   z-index: 1;
   .carousel-item {
     img {
-      height: 700px;
+      height: 105vh;
+      @include sm {
+        height: 90vh;
+      }
       filter: brightness(0.5);
       object-fit: cover;
       object-position: top center;
@@ -25,9 +31,13 @@
     display: flex;
     z-index: 2;
     align-items: flex-end;
+
     justify-content: center;
     flex-direction: column;
     padding: 0 200px;
+    @include xll {
+      padding: 0 60px;
+    }
     & * {
       font-family: 'Roboto', sans-serif;
     }
@@ -37,37 +47,82 @@
     }
     p {
       font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
       text-transform: none;
       margin-bottom: 1em;
+      @include xll {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      @include sm {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    .heading {
+      @include xll {
+        font-size: 42px;
+        line-height: 50px;
+      }
+      @include sm {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
   }
   .swiper-container {
     z-index: 1;
-    height: 700px;
+    height: 105vh;
+    @include sm {
+      height: 90vh;
+    }
     width: 100%;
     .swiper-button-prev,
     .swiper-button-next {
       color: #fff;
       transform: scale(0.8);
+      margin: 0 auto;
+      width: 100%;
       font-weight: bold;
+      @include xll {
+        width: 100px;
+      }
+      @include sm {
+        transform: scale(0.5);
+      }
       &:focus {
         outline: none;
       }
     }
     .swiper-button-prev {
-      left: 100px;
+      left: 0;
+      &:after {
+        margin-right: 1200px;
+        @include xll {
+          margin-right: 80px;
+        }
+      }
     }
     .swiper-button-next {
-      right: 100px;
+      right: 0;
+      &:after {
+        margin-left: 1200px;
+        @include xll {
+          margin-left: 80px;
+        }
+      }
     }
     .swiper-slide {
       img {
         width: 100%;
         height: auto;
         filter: brightness(0.5);
+        @include xll {
+          width: auto;
+          height: 100%;
+        }
       }
     }
   }

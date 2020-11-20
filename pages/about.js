@@ -14,39 +14,41 @@ function About() {
       <div className=' grid container'>
         <div className='left'>
           <div className='transport-types'>
-            <div className='type'>
-              <div className='icon'>
-                <Truck />
-              </div>
-              <div className='content'>
-                <div className='mini-title bold'>Ground Transport</div>
-                <div className='leading'>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike.
+            <div className='inner'>
+              <div className='type'>
+                <div className='icon'>
+                  <Truck />
+                </div>
+                <div className='content'>
+                  <div className='mini-title bold'>Ground Transport</div>
+                  <div className='leading'>
+                    On the other hand, we denounce with righteous indignation
+                    and dislike.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className='type'>
-              <div className='icon'>
-                <Plane />
-              </div>
-              <div className='content'>
-                <div className='mini-title bold'>Ground Transport</div>
-                <div className='leading'>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike.
+              <div className='type'>
+                <div className='icon'>
+                  <Plane />
+                </div>
+                <div className='content'>
+                  <div className='mini-title bold'>Ground Transport</div>
+                  <div className='leading'>
+                    On the other hand, we denounce with righteous indignation
+                    and dislike.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className='type'>
-              <div className='icon'>
-                <Earth />
-              </div>
-              <div className='content'>
-                <div className='mini-title bold'>Ground Transport</div>
-                <div className='leading'>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike.
+              <div className='type'>
+                <div className='icon'>
+                  <Earth />
+                </div>
+                <div className='content'>
+                  <div className='mini-title bold'>Ground Transport</div>
+                  <div className='leading'>
+                    On the other hand, we denounce with righteous indignation
+                    and dislike.
+                  </div>
                 </div>
               </div>
             </div>

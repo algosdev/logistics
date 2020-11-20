@@ -5,6 +5,7 @@ import { useOutsideCloseMenu } from '../libs/useOutsideCloseMenu'
 function Header({ dark, active }) {
   const languages = ['EN', 'RU', 'UZ']
   const [sticky, setSticky] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
   const [bg, SetBg] = useState(false)
   const langPopupRef = useRef(null)
   const [langPopUp, setLangPopUp] = useState(false)
@@ -140,7 +141,17 @@ function Header({ dark, active }) {
             </div>
             <div className='navigator'>
               <nav>
-                <ul>
+                <div className={`hamburger-cont ${showMenu ? 'show' : 'hide'}`}>
+                  <div
+                    className='hamburger'
+                    onClick={() => setShowMenu(!showMenu)}
+                  >
+                    <div className='span'></div>
+                    <div className='span'></div>
+                    <div className='span'></div>
+                  </div>
+                </div>
+                <ul className={`nav-menu ${showMenu ? 'show' : 'hide'}`}>
                   <li className='nav-item'>
                     <Link href='/'>
                       <a>

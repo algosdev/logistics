@@ -9,6 +9,11 @@
   }
 }
 
+@mixin smm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
 @mixin lg {
   @media (max-width: #{$screen-lg}) {
     @content;
@@ -19,6 +24,17 @@
     @content;
   }
 }
+@mixin lgs {
+  @media (max-width: #{$screen-lgs}) {
+    @content;
+  }
+}
+@mixin xll {
+  @media (max-width: #{$screen-xll}) {
+    @content;
+  }
+}
+
 @mixin xxl {
   @media (max-width: #{$screen-xxl}) {
     @content;

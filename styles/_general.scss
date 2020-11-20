@@ -11,6 +11,10 @@
   outline: 0;
   border: 0;
   cursor: pointer;
+  @include sm {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
   &:hover {
     background-color: $dark-blue !important;
     color: #ffffff;
@@ -173,6 +177,10 @@ label {
     letter-spacing: 0px;
     color: $dark-txt;
     margin-bottom: 1em;
+    @include lg {
+      max-width: 20px;
+      line-height: 30px;
+    }
   }
   .line {
     position: absolute;
@@ -182,6 +190,10 @@ label {
     margin-left: 18px;
     top: 50%;
     display: inline-block;
+    @include lg {
+      width: 30px;
+      margin-left: 10px;
+    }
   }
 }
 .highlight {
@@ -208,6 +220,7 @@ label {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .checkbox {
   display: flex;

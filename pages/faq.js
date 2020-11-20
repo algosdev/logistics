@@ -72,8 +72,8 @@ function Faq() {
                 </div>
               </div>
               <div className='block'>
-                <input type='checkbox' name='q1' id='q3' />
-                <label htmlFor='q3'>
+                <input type='checkbox' name='q1' id='q4' />
+                <label htmlFor='q4'>
                   <div className='plus'>+</div>
                   <div className='minus'>-</div>
                   <span>
@@ -91,8 +91,8 @@ function Faq() {
                 </div>
               </div>
               <div className='block'>
-                <input type='checkbox' name='q1' id='q3' />
-                <label htmlFor='q3'>
+                <input type='checkbox' name='q1' id='q5' />
+                <label htmlFor='q5'>
                   <div className='plus'>+</div>
                   <div className='minus'>-</div>
                   <span>

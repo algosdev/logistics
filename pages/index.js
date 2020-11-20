@@ -10,14 +10,12 @@ import News from '../components/News'
 export default function Home() {
   return (
     <>
-      <SEO title='My Frighter' />
+      <SEO />
       <Header active='home' />
       <Banner />
       <Services />
       <AboutUs />
-      {/* <Main />*/}
       <Footer />
-      <div className='main-container'></div>
     </>
   )
 }

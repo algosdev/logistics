@@ -23,6 +23,10 @@
       z-index: 5;
       padding: 50px;
       padding-bottom: 0;
+      @include sm {
+        padding: 0;
+        font-size: 36px;
+      }
     }
     .leading {
       z-index: 5;
@@ -35,11 +39,17 @@
     }
   }
   & > .container {
-    padding: 50px 0;
+    padding: 50px 10px;
+    @include sm {
+      padding-bottom: 0;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 30px;
+      @include lgs {
+        grid-template-columns: 1fr;
+      }
       .map-cont {
         .map {
           iframe {

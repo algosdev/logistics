@@ -1,7 +1,14 @@
 .socials-cont {
   .inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    @include xll {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
     .item {
       display: flex;
       .icon-cont {

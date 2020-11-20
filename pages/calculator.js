@@ -85,7 +85,7 @@ function Calculator() {
                 </select>
               </div>
               <div className='input'>
-                <div>Number of states that you have $500k sales in</div>
+                <label>Number of states that you have $500k sales in</label>
                 <div className='checkbox-cont'>
                   <div className='checkbox'>
                     <input type='radio' name='radio2' id='opt11' />
@@ -120,7 +120,7 @@ function Calculator() {
                 </select>
               </div>
             </div>
-            <div className='title-cont'>
+            <div className='total-cont'>
               <div className='title'>COST CALCULATED PER YEAR</div>
               <div className='title'>$ 63000</div>
             </div>

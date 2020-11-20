@@ -60,7 +60,7 @@ function Service() {
             </div>
             <div className='content'>
               <div className='title-cont'>
-                <span className='title'>Storage</span>
+                <span className='title'>Sea Transport</span>
                 <span className='line'></span>
               </div>
               <div className='leading'>
